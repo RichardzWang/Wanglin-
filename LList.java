@@ -4,7 +4,7 @@
  * Version 03 uses doubly-linked nodes
  *****************************************************/
 
-public class LList implements List { //your List.java must be in same dir
+public class LList<E> implements List { //your List.java must be in same dir
 
     //instance vars
     private DLLNode _head, _tail; //pointers to first and last nodes
@@ -19,7 +19,7 @@ public class LList implements List { //your List.java must be in same dir
 
     //--------------v  List interface methods  v--------------
 
-    //insert a node in front of first node
+    //insert a node at the end
     public boolean add( String newVal ) { 
 	addLast( newVal );
 	return true; //per Java API spec
@@ -154,7 +154,7 @@ public class LList implements List { //your List.java must be in same dir
     }
 
     public void addLast( String newLastVal ) { 
-	//insert new node before first node (prev=_last, next=null)
+	//insert new node after last node (prev=_last, next=null)
 	_tail = new DLLNode( newLastVal, _tail, null );
 
 	if ( _size == 0 ) 
