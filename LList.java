@@ -1,7 +1,7 @@
 /*
 Team Wanglin' - Richard Lin, Richard Wang
 APCS pd5
-hw 15 -- Generically Speaking...
+hw15 -- Generically Speaking...
 3/17/2016
 /*****************************************************
  * class LList
