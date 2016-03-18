@@ -5,20 +5,20 @@
 
 public interface List { 
 
-    //add node to list, containing input String as its data
-    public boolean add( String x ); 
+    //add node to list, containing input Object as its data
+    public boolean add( Object x ); 
 
     //inserts a node containing s at position I
-    public void add( int i, String s ); 
+    public void add( int i, Object s ); 
 
     //removes the node at position i and returns its cargo
-    public String remove( int i );
+    public Object remove( int i );
 
     //return data in element at position i
-    public String get( int i ); 
+    public Object get( int i ); 
 
     //overwrite data in element at position i
-    public String set( int i, String x ); 
+    public Object set( int i, Object x ); 
 
     //return length of list
     public int size(); 
