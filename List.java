@@ -3,22 +3,22 @@
  * Specifies actions a List must be able to perform.
  *****************************************************/
 
-public interface List { 
+public interface List<E> { 
 
-    //add node to list, containing input Object as its data
-    public boolean add( Object x ); 
+    //add node to list, containing input E as its data
+    public boolean add( E x ); 
 
     //inserts a node containing s at position I
-    public void add( int i, Object s ); 
+    public void add( int i, E s ); 
 
     //removes the node at position i and returns its cargo
-    public Object remove( int i );
+    public E remove( int i );
 
     //return data in element at position i
-    public Object get( int i ); 
+    public E get( int i ); 
 
     //overwrite data in element at position i
-    public Object set( int i, Object x ); 
+    public E set( int i, E x ); 
 
     //return length of list
     public int size(); 

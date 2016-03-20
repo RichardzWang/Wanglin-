@@ -5,12 +5,12 @@
 
 public class DLLNode<E> {
 
-    private Object _cargo;    //cargo may only be of type String
+    private E _cargo;    //cargo may only be of type String
     private DLLNode<E> _nextNode, _prevNode; //pointers to next, prev DLLNodes
 
 
     // constructor -- initializes instance vars
-    public DLLNode( Object value, DLLNode<E> prev, DLLNode<E> next ) {
+    public DLLNode( E value, DLLNode<E> prev, DLLNode<E> next ) {
 	_cargo = value;
 	_nextNode = next;
 	_prevNode = prev;
@@ -18,7 +18,7 @@ public class DLLNode<E> {
 
 
     //--------------v  ACCESSORS  v--------------
-    public Object getCargo() { return _cargo; }
+    public E getCargo() { return _cargo; }
 
     public DLLNode<E> getNext() { return _nextNode; }
 
@@ -27,8 +27,8 @@ public class DLLNode<E> {
 
 
     //--------------v  MUTATORS  v--------------
-    public Object setCargo( Object newCargo ) {
-	Object foo = getCargo();
+    public E setCargo( E newCargo ) {
+	E foo = getCargo();
 	_cargo = newCargo;
 	return foo;
     }

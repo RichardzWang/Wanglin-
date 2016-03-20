@@ -1,15 +1,15 @@
 /*
-Team Wanglin' - Richard Lin, Richard Wang
+Team Wanglin' - Richard Wang, Richard Lin
 APCS pd5
-hw15 -- Generically Speaking...
-3/17/2016
+HW15 -- Generational Improvement
+3/20/2016
 /*****************************************************
  * class LList
  * Implements a linked list
  * Version 03 uses doubly-linked nodes
  *****************************************************/
 
-public class LList<E> implements List { //your List.java must be in same dir
+public class LList<E> implements List<E> { //your List.java must be in same dir
 
     //instance vars
     private DLLNode<E> _head, _tail; //pointers to first and last nodes
