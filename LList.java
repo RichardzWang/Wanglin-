@@ -1,7 +1,7 @@
 /*
 Team Wanglin' - Richard Wang, Richard Lin
 APCS pd5
-HW15 -- Generational Improvement
+HW16 -- Generational Improvement
 3/20/2016
 /*****************************************************
  * class LList
